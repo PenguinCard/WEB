@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1><a href="index.html" style="color:red;text-decoration:underline" >WEB</a></h1>
+    <h1><a href="index.html" style="text-decoration:underline" >WEB</a></h1>
     <div id="grid">
       <ol id="line">
         <li><a href="1.html">HTML</a></li>
@@ -16,6 +16,17 @@
       </ol>
       <div>
         <h2><a href="https://ko.wikipedia.org/wiki/웹사이트" title="웹 페이지 - 위키백과" target="_blank">WEB</a></h2>
+        <input id="change" type="button" value="night" onclick="
+        if(this.value==='day'){
+          var target = document.querySelector('body');
+          this.value='night';
+          target.style.backgroundColor='white';
+          target.style.color='black';
+        }else{
+          this.value='day';
+          target.style.backgroundColor='black';
+          target.style.color='white';
+        }">
         <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet. English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland. The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
         <p align="center"><img src="code.jpg" width="70%"></p>
         <p style="margin-top:40px;">
