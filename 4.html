@@ -17,8 +17,8 @@
       <div>
         <h2><a href="https://ko.wikipedia.org/wiki/파이썬" title="파이썬 - 위키백과" target="_blank">Python</a></h2>
         <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
         if(this.value==='day'){
-          var target = document.querySelector('body');
           this.value='night';
           target.style.backgroundColor='white';
           target.style.color='black';
