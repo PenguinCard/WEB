@@ -12,12 +12,24 @@
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
         <li><a href="3.html">JavaScript</a></li>
-        <li><a href="4.html" style="color:red;text-decoration:underline">Python</a></li>
+        <li><a href="4.html" style="text-decoration:underline">Python</a></li>
       </ol>
       <div>
         <h2><a href="https://ko.wikipedia.org/wiki/파이썬" title="파이썬 - 위키백과" target="_blank">Python</a></h2>
+        <input type="button" value="night" onclick="
+        if(this.value==='day'){
+          var target = document.querySelector('body');
+          this.value='night';
+          target.style.backgroundColor='white';
+          target.style.color='black';
+        }else{
+          this.value='day';
+          target.style.backgroundColor='black';
+          target.style.color='white';
+        }">
         <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
         <p align="center"><img src="code.jpg" width="70%"></p>
+        <p style="margin-top:40px;"></p>
       </div>
     </div>
   </body>
