@@ -3,6 +3,7 @@ body{
 }
 a {
   text-decoration: none;
+  color: darkcyan;
 }
 @media(min-width:700px){
     h1 {
