@@ -4,6 +4,8 @@
     <title>WEB - CSS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
@@ -16,17 +18,7 @@
       </ol>
       <div>
         <h2><a href="https://ko.wikipedia.org/wiki/종속형_시트" title="종속형 시트 - 위키백과" target="_blank">CSS</a></h2>
-        <input id="change" type="button" value="night" onclick="
-        var target = document.querySelector('body');
-        if(this.value==='day'){
-          this.value='night';
-          target.style.backgroundColor='white';
-          target.style.color='black';
-        }else{
-          this.value='day';
-          target.style.backgroundColor='black';
-          target.style.color='white';
-        }">
+        <input type="button" value="night" onclick="nightdayhandle(this);">
         <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create   visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
         </p>
         <p align="center"><img src="code.jpg" width="70%"></p>
